@@ -134,4 +134,41 @@
  ssh -p 2220 bandit12@bandit.labs.overthewire.org
  password: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
  
+ ls
+ mkdir /tmp/foobar
+ cp data.txt /tmp/foobar
+ cd /tmp/foobar
+ xxd -r data.txt > data
+ file data
+ mv data data.gz
+ gzip -d data.gz 
+ file data
+ mv data data.bz
+ bzip2 -d data.bz
+ file data
+ mv data data.gz
+ gzip -d data.gz
+ file data
+ mv data data.tar
+ tar -xf data.tar
+ file data5.bin
+ mv data5.bin data.tar
+ tar -xf data.tar
+ file data6.bin
+ mv data6.bin data.bz
+ bzip2 -d data.bz
+ file data
+ mv data data.tar
+ tar -xf data.tar
+ file data8.bin
+ mv data8.bin data.gz
+ gzip -d data.gz
+ file data
+ cat data
+ ```
+# level13
+
+ ```bash
+ ssh -p 2220 bandit13@bandit.labs.overthewire.org
+ password: wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
  ```
